@@ -1,0 +1,150 @@
+A filter is a set of conditions applied to a table list to isolate a subset of data. Three components that make up a filter condition include [1] field, [2] operator, and [3] value. Select the Show/hide filter (funnel) icon to add, remove, or edit filter conditions and apply them.
+
+Field: A choice list based on the table and user access rights. The choice list includes fields on related tables by dot-walking. 
+
+2
+Operator: A choice list based on the field type. For example, in the incident table, the greater than operator does not apply to the Active field but it does apply to the Priority field. 
+
+3
+Value: A text entry field or a choice list, depending on the field type. For example, in the Incident table, the Active field offers a choice list with values true, false, and empty, while the Short description field offers a text entry field. 
+
+
+Field operators will change depending on field data types. Select each of the field operators below to flip the card over and see some examples of each. You can also log into your instance and see all of them for yourself! 
+
+
+
+QUICK FILTERS
+
+Right-click on any field and select Show Matching to show records like the one you are interested in seeing. For example, if you select Show Matching on a Priority 1-Critical incident, the quick filter will display a new list of all Priority 1-Critical incidents.
+
+Filter out allows you to generate a new list of records without certain fields that you don't want to see. In this same example, if you right-click and select Filter Out on Priority 1-Critical incidents, the newly generated list will display all other records that are not Priority 1-Critical (ex. the list will only display 2-High, 3-Moderate, etc).
+
+Tags provide an easy way to categorize, flag, and locate records. Tags can be created for any record from a list or form view (we will cover Forms in the next course). To create a tag from a list view, right-click on a field and select Assign Tag. There are pre-made tags in the Platform (ex. Android, Java, etc.), but you may also create your own by selecting New Tag...
+
+
+
+You may add a Tags column using the Personalize List Column, list collector. By doing so, you may use in-line editing to Add or Remove tags straight from the list view. To save a tag you've added through an in-line edit, you can press Enter on your keyboard or click any area on the list, outside of the newly added tag. If you would like to remove the tag, select the (X) to the right of the tag.
+
+
+Tags column, Email tag
+
+Edit personal tags by using the My Tags module (All > Self-Service > My Tags). View tagged records by using the My Tagged Documents (All > Self-Service > My Tagged Documents) module (tagged records will be covered in the Forms course).
+
+
+
+
+
+
+
+TASK 2
+
+
+Task Description: View a list of incidents and personalize the list, as well as update some fields using the List Editor.
+
+ 
+
+Task Instructions:
+
+1.	Navigate to the All menu and select Incident > All.
+
+2.	Select Show/hide filter (funnel) icon.
+
+3.	
+Set the field, operator(filter/condition), and value choice lists to the following: 
+
+State | is not | Closed AND
+Assignment Group | is not empty AND
+Assigned to | is not empty
+
+
+Filters.png
+
+4.	Select Run.
+
+5.	Select the Priority column to sort the list so that 1-Critical incidents appear first in the list.
+
+6.	
+Select the State column of all 1-Critical incidents and use the List Editor to change the State to In Progress. Select the green check mark to save the list changes.  (Only 2 rows will be updated.)
+
+TIP: To use the List Editor, press the Shift key on your keyboard, and use your mouse to click and drag to select multiple fields in a column. This allows you to edit multiple records at the same time.
+Set All to In Progress.gif
+
+7.	Select the Personalize List (gear) icon to remove the "Opened" and "Updated by" columns.
+
+8.	Locate INC0000055 and set the Category to Software.
+
+
+
+
+
+
+
+
+
+Related lists show records from tables that have a relationship to the current record. Related lists are presented as tabs at the bottom of the form view. From a related list, a user can select records using the Edit... button or create new records using the New button. 
+
+As with other lists, a user can personalize columns, filter, or refresh the list using the gear icon, list controls, or the funnel icon. 
+
+A formatter is an element used to display information that is not a field on a record. For example, the Activity Stream or Work Notes/Customer Comments are examples of a formatter as it displays a list of activities. 
+
+Lists (covered in the previous lesson) and forms are the most common ways to interact with data. A form displays fields from one record. The specific information on a form depends on the type of record displayed. Users can only view and edit the fields in a record they have access to. In addition to fields, the form can also contain sections (ex. Notes, Analysis Information, Resolution Information, and Other Information sections seen below) and Related lists. Related lists display records from tables that have a relationship to the current record. Related lists will only appear on a form if the record has already been saved to the database. 
+
+If a field in the form is greyed out, you do not have access to editing that field. A form can be loaded by searching for a record number in the Global Search or by selecting a record in a list. Take a look at the example Problem form (PRB0000014).
+
+
+Example Problem form (PRB0000014)
+
+Form headers
+
+
+Form header (Incident: INC00081111 )
+
+1
+
+1
+Back: If you are viewing a list and select a record to navigate to a form, this back button will lead you back to the original list of records. 
+
+2
+
+2
+Form Context Menu (Additional actions): provides additional options specific to the form. Save can be found in the Form Context Menu and is used to save a form while remaining on a page. Depending on which type of form you viewing, options may vary. You may also right-click on a form header in order to save a record. 
+
+3
+
+3
+Record title: displays the name of the record. If the record is anything other than the Default view, the view name will also display in the form title.
+
+4
+
+4
+Manage Attachments: Add or remove files by selecting the file attachment (paperclip) icon.
+
+5
+
+5
+Activity Stream: Displays the list of activities, or history on a form. It provides an easy way to track items not displayed within a field in the record (for example, journal fields like comments and work notes). 
+
+6
+
+6
+Personalize Form: Allows you to select which form fields display on the record. A cleared grey checkbox indicates form fields that you previously hid. NOTE: Only the fields that the form is configured to display are available in the Personalize Form menu (the options will vary depending on the type of form).
+
+7
+
+7
+More options menu: Select the 3 dots (...) to have more options on a form. The options available may vary based on the form. For example, the More options menu on an incident form may display the option to Email users straight from the record, select the Toggle Template Bar (manually apply, create, or edit templates), Toggle Annotations on/off (display guidance/more information about certain fields on a form) and create/add Tags. 
+
+8
+
+8
+Submit/Update: If you are working on a new (not yet saved) record, you will see the Submit button. If a record has been previously saved and you have made more updates, you can select Update. 
+
+9
+
+9
+Resolve: Since the view above is from an Incident form, you can Resolve the incident all by the click of a button. 
+
+10
+
+10
+Previous/Next Record: If you selected a record from a list in the Platform, you can select previous (upward arrow) and next (downward arrow) icons to navigate to different records instead of returning to the list of records and selecting other records that way. If you have created a new record, you will not see this option. 
